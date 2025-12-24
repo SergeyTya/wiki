@@ -91,3 +91,9 @@ export LD_LIBRARY_PATH=/usr/local/MATLAB/R2023b/cefclient/sys/os/glnxa64
 
 https://ww2.mathworks.cn/matlabcentral/answers/364551-why-is-matlab-unable-to-run-the-matlabwindow-application-on-linux
 
+4.4. Устранение багов с инерфейсом 
+
+> export ENABLE_QWEBWINDOW=true; ./matlab
+
+https://www.mathworks.com/matlabcentral/answers/2012542-drop-down-boxes-and-right-click-menu-don-t-work-on-the-new-matlab-desktop-on-linux
+
