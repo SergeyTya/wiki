@@ -70,9 +70,24 @@ https://www.mathworks.com/matlabcentral/answers/20-how-do-i-make-a-desktop-launc
 
 ### 4. Особенности 
 
-Игнорируем предупреждение 
+4.1 Для устранения ошибки Out of memory можно использовать
+
+```
+ulimit -n 10000
+```
+
+4.2 Игнорируем предупреждение 
 
 ```
 Gtk-Message: 10:32:31.466: Failed to load module "canberra-gtk-module"
 ```
 https://www.mathworks.com/matlabcentral/answers/472134-gtk-message-10-32-31-466-failed-to-load-module-canberra-gtk-module
+
+4.3 Для устранения проблем с CEF можно использовать 
+
+```
+export LD_LIBRARY_PATH=/usr/local/MATLAB/R2023b/cefclient/sys/os/glnxa64
+```
+
+https://ww2.mathworks.cn/matlabcentral/answers/364551-why-is-matlab-unable-to-run-the-matlabwindow-application-on-linux
+
