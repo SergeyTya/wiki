@@ -1,6 +1,10 @@
+# Структурная схема Charger to Grid конвертора
 ```mermaid
 flowchart TB
-    
+
+    %%{init: {"theme": "dark", "themeVariables": {"darkMode": true}}}%%
+    %%{init: {"themeVariables": {"fontSize": "16px"}}}%%
+
     N1["АКБ накопителя <br/> предполагается то же напряжения, что и батарея EV"]
     N2["Повышает анпряжение, обеспечивает гальваническую развязку. Применяется опционально. Может быть заменен на буст преобр. "] 
     N3["Накопитель энергии AFE. Коденсаторная сборка с низкоиндуктивной шиной"]
@@ -28,6 +32,7 @@ flowchart TB
 
      
     subgraph AFE["AFE (Active Front End) "]
+        %%{init: {"flowchart": {"minNodeWidth": 0, "minNodeHeight": 0}}}%%
         direction LR
         Udc(("Udc")) --> INV
         IA -->|"PWM1"| LCL
@@ -62,7 +67,7 @@ flowchart TB
 
     AFE --> EMF--> GRID["⚡ Сеть 3~ AC<br/>"]
 
-    classDef note fill:#fffbe6,stroke:#b7950b,stroke-dasharray: 3 3;
+    classDef note fill: #665605 ,stroke:#b7950b,stroke-dasharray: 3 3;
     class N1 note;
     class N2 note;
     class N3 note;
