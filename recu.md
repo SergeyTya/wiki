@@ -1,3 +1,4 @@
+```mermaid
 flowchart TB
     
     N1["АКБ накопителя <br/> предполагается то же напряжения, что и батарея EV"]
@@ -76,6 +77,6 @@ flowchart TB
 
     MCU1-->|"OCPP"|MCU2
     MCU3-->|"CAN "|MCU2
-
+```
 
     
